@@ -1,0 +1,59 @@
+name : Deploy Webiste
+
+
+
+ 
+
+
+
+on:
+
+
+
+ push:
+
+
+
+   branches:
+
+
+
+     - master
+
+
+
+ 
+
+
+
+jobs:
+
+
+
+  deploy:
+
+
+
+   runs-on:  ubuntu-latest
+
+
+
+ 
+
+
+
+   steps:
+
+
+
+     - name : Checkout COde
+
+
+
+       uses: actions/checkout@v3
+
+
+
+     - name : Deploy Messsge
+
+       run: echo "Deploying Website.."
